@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Center A Div</title>
+    <style>
+      /* center a div 4 way : 1. margin: 0 auto;, 2. display:flex, 3. display:grid, and 4. position: relative absolute; with left:50%; top:50%; transform: translate(-50%, -50%) */
+      .center {
+        background-color: aqua;
+        width: 80%;
+        height: 500px;
+        margin: 0 auto;
+        /* for block element centering */
+        text-align: center;
+        position: relative;
+      }
+      .description {
+        width: 200px;
+        height: 200px;
+        background-color: rebeccapurple;
+        /* this position methd we can center a div with horizontally and vertically */
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <div class="description">
+        <h1>Box-1</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet,
+          praesentium.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
